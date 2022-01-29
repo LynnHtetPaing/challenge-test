@@ -19,6 +19,7 @@ class JobController extends Controller
         $data = $this->applicant->applyJob();
         
         return response()->json([
+            'status' => 'success',
             'data' => $data
         ]);
     }
